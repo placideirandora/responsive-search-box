@@ -1,2 +1,2 @@
 # responsive-search-box
-A responsive simple search box with CSS Flex Box and Media Queries.
+A responsive simple search box with css flex box and media queries.
