@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+* { margin: 0; padding: 0; outline: 0; box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+  }
+
+body { background: url('../img/placide.jpg') no-repeat center;
+       background-size: cover; width: 100%; height: 100vh;
+     }
+
+.container .sub-container { position: absolute; top: 50%; left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: rgba(0, 0, 0, 0.6);
+                            max-width: 550px; width: 100%;
+                            padding: 15px; border-radius: 5px;
+                            display: flex; justify-content: space-between;
+                          }
+.container .sub-container .input { width: 85%; padding: 15px 20px; border: none;
+                                   border-radius: 5px; font-weight: bold;
+                                 }
+
+.container .sub-container .search-btn { background: #447ab1; width: 12%; 
+                                        border-radius: 5px; position: relative;
+                                        cursor: pointer;
+                                      } 
+
+.container .sub-container .search-btn .fas { position: absolute; top: 50%; left: 50%; 
+                                             transform: translate(-50%, -50%); 
+                                             font-size: 22px;
+                                           }
+
+@media screen and (max-width: 600px)
+{
+    .container .sub-container { max-width: 400px; }
+
+    .container .sub-container .input { width: 80%; }
+
+    .container .sub-container .search-btn { width: 14%; }
+
+    .container .sub-container .search-btn .fas { font-size: 20px; }
+}
